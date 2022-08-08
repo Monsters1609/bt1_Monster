@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="demo2.css"> 
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="loading" >
+        <div class="spinner-border text-success" role="status">
+            <span class="sr-only"></span>
+        </div>
+        <h2 class="notification">Loading...</h2> 
+    </div>
+    <div class="list">
+        <div class="search">
+            <form action="" method="get">
+                <input type="search" name="" id="inputSearch" placeholder="Search">
+                <button type="button" id="btnSearch" > Lọc </button>
+            </form>
+        </div>
+        <h1>List</h1>
+        
+        <div class="tableList">
+        </div>
+    </div>
+    <div class="content">
+        <div class="createList">
+            <h1>Add List</h1>
+            <form action="" id="form" method="post">
+                <ul>
+                    <li><input type="text" name="" id="name" placeholder="name"></li>
+                    <li><input type="text" name="" id="username" placeholder="username"></li>
+                    <li><input type="text" name="" id="email" placeholder="email"></li>
+                    <li><input type="text" name="" id="phone" placeholder="phone"></li>
+                    <li><input type="text" name="" id="website" placeholder="website"></li>
+                    <li><button type="button" id="btn1">submit</button></li>
+                </ul>
+            </form>
+        </div>
+        <div class="updateList">
+            <h1>Update List</h1>
+            <form action="">
+                <ul>
+                    <li><input type="text" name="" id="updateName" placeholder="name"></li>
+                    <li><input type="text" name="" id="updateUsername" placeholder="username"></li>
+                    <li><input type="text" name="" id="updateEmail" placeholder="email"></li>
+                    <li><input type="text" name="" id="updatePhone" placeholder="phone"></li>
+                    <li><input type="text" name="" id="updateWebsite" placeholder="website"></li>
+                    <li><button type="button" id="btn2" >submit</button></li>
+                </ul>    
+            </form>
+        </div>
+    </div>
+    <script type="module" src="demo2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

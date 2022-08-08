@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./redStar.svg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="demo.css">
+    <title>Table List</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="./redStar.svg" alt="">User List Table</h1>
+        <div class="loading">
+            <button id="loading" class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="content">
+            <div class="table">
+                <div class="contentHandle">
+                    <div class="search">
+                        <form action="" method="get" id="formSearch">
+                            <input type="search" name="" id="inputSearch" placeholder="Search">
+                            <button type="button" id="btnFilter">Filter</button>
+                        </form>
+                    </div>
+                    <div class="setting">
+                        <i class="bi bi-gear" id="setting"></i>
+                    </div>
+                </div>
+                <div class="list"></div>
+            </div>
+            <div class="backgroundForm">
+                <div class="tableForm">
+                    <span id="close">
+                        <i class="bi bi-x-diamond-fill" id="btnClose"></i>
+                    </span>
+                    <div class="handleForm">
+                        <div class="add">
+                            <h2>Create add</h2>
+                            <form action="" method="post" id="formAdd">
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <input type="text" name="" id="addFirstName" placeholder="FirstName">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addLastName" placeholder="LastName">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addAge" placeholder="Age">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addGender" placeholder="Gender">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addEmail" placeholder="Email">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addPhone" placeholder="Phone">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addUsername" placeholder="Username">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addPassword" placeholder="Password">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addBirthDate" placeholder="Birthdate">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addDomain" placeholder="Domain">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="addIp" placeholder="Ip">
+                                    </li>
+                                    <li class="item">
+                                        <button type="button" id="itemBtnAdd">Create</button>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="update">
+                            <h2>Update list</h2>
+                            <form action="" method="post" id="formUpdate">
+                                <ul class="listItems">
+                                    <li class="item">
+                                        <input type="text" name="" id="updateFirstName" placeholder="FirstName">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateLastName" placeholder="LastName">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateAge" placeholder="Age">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateGender" placeholder="Gender">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateEmail" placeholder="Email">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updatePhone" placeholder="Phone">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateUsername" placeholder="Username">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updatePassword" placeholder="Password">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateBirthDate" placeholder="Birthdate">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateDomain" placeholder="Domain">
+                                    </li>
+                                    <li class="item">
+                                        <input type="text" name="" id="updateIp" placeholder="Ip">
+                                    </li>
+                                    <li class="item">
+                                        <button type="button" id="itemBtnUpdate">Update</button>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script type="module" src="./callApi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

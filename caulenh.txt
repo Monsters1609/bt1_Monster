@@ -1,0 +1,42 @@
+npm init -y
+
+mongodb+srv://phuong:iBn5rfuB5EI5yPWD@note.stjg5.mongodb.net/mobile?retryWrites=true&w=majority
+
+nodemon : mỗi lần lưu sẽ chạy lại
+express:framwork để viết nhanh hơn
+dotenv:để kết nối với file .env
+npm i nodemon express dotenv
+
+server.js
+
+app.mvc
+
+//req:lấy từ postmain
+//res:in ra 
+//res.status(400).json()
+//400 lỗi 
+//500 lỗi hệ thống
+
+app.parse
+...............
+mongoose:để kết nối với database
+colors:màu
+npm i mongoose colors
+app.conect
+
+models/ ...js
+!mdbgum
+
+TodoRouter.js
+app.router
+trc
+Cứ có cơ sở dữ liệu thì thêm await/async
+
+router.post('/todo' ,async (req , res)=>{
+    try {
+       
+    } catch (error) {
+       return res.status(500).json({message:error.message}) 
+    }
+})
+fetch()

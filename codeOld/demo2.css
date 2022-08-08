@@ -1,0 +1,137 @@
+:root{
+    --text:black;
+    --background:linear-gradient( 35deg, #ccffff,#ffcccc);
+    --background-input:white;
+    --button:lightBlue;
+    --button-hover:yellowGreen;
+    --table:#ccffff;
+    --tr-hover:yellow;
+    --btnUpdate:lightGreen;
+    --btnDelete:Red;
+}
+body{
+    background:var(--background);
+    background-repeat:no-repeat;
+    height:100%;
+}
+.list{
+    border:1px black solid;
+    border-radius: 10px;
+    width:880px;
+    height:600px;
+    position:relative;
+    left:225px;
+    background-color: var(--background-input);
+}
+.content{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top: 50px;
+}
+.search{
+    position:relative;
+    top:20px;
+    left:90px;
+}
+h1{
+    text-align:center;
+    color:var(--text)
+}
+.tableList{
+    border:1px black solid;
+    width:750px;
+    height:460px;
+    overflow: scroll;
+    position:relative;
+    left:70px;
+    background:var(--table);
+}
+.createList , .updateList{
+    text-align:center;
+    border:1px black solid;
+    border-radius:10px;
+    background:var(--background-input);
+}
+input{
+    border-radius:10px;
+    width:250px;
+    height:30px;
+    position:relative;
+    left:-20px;
+    font-size: 20px;
+}
+#btn1 , #btn2{
+    width:250px;
+    height:30px;
+    position:relative;
+    left:-20px;
+    border-radius:10px;
+    background-color:var(--button);
+    font-weight: bold;
+    font-size: 20px;
+}
+#btn1:hover ,#btn2:hover{
+    width:250px;
+    height:30px;
+    position:relative;
+    left:-20px;
+    border-radius:10px;
+    background-color:var(--button-hover);
+}
+li{
+    list-style:none;
+    margin-top:10px;
+}
+table{
+    border-collapse: collapse;
+}
+tr,td{
+    border: 1px solid black;
+}
+tr:hover{
+    background-color: var(--tr-hover);
+}
+#Update {
+    background-color: var(--btnUpdate);
+    height:30px;
+    text-align: center;
+    font-weight: bold;
+}
+#Delete {
+    background-color: var(--btnDelete);
+    font-weight: bold;
+
+}
+.loading{
+    display:none;
+}
+.load{
+    float:left;
+    position:fixed;
+    width:200px;
+    height:85px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:3px 3px 3px 3px #ccffff;
+    background-color:white;
+    animation-name: example;
+    animation-duration: 5s;
+}
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+.notification{
+    position:relative;
+    top:20px;
+    left:-10px;
+    float:right;
+}
+.spinner-border{
+    position:relative;
+    top:25px;
+    left:20px;
+    float:left;
+}
